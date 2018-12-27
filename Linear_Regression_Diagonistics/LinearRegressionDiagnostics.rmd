@@ -5,14 +5,20 @@ output: pdf_document
 ---
 
 ```{r setup, include=TRUE}
-mydat <- read.csv("~/GitHub/R-Projects/Linear_Regression_Diagonistics/data.csv",sep=",")
+mydat <- read.csv("data.csv",sep=",")
 predictor_x <- mydat$Population
 response_y <- mydat$Peakmembership
 ```
 
+## Regression Diagnostics
+
 The question we want to seek is whether there may exist a relationship between the predictor and the response variable. If you suspect a relationship, state it as an expression.
 
-## Regression Diagnostics
+The steps for regression diagnostics follows this flow chart:
+
+\newpage
+
+![Regression Flow Chart](RegressionFlowChart.png)
 
 \textbf{A: Draw a scatter plot of the data}
 
